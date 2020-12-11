@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from learn import views as learn_views  # new
 from django.conf.urls import include, url
+from learn import download
 
 urlpatterns = [
     path('', learn_views.home, name="home"),  # new
     path('admin/', admin.site.urls),
     path('add/<int:a>/<int:b>/', learn_views.add, name='add'),
     url('help/', learn_views.index_add, name='add'),
+    url('download/', download.download_file, name="download"),
 ]

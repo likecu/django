@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>download2</title>
+</head>
+<body>
+    <form action="" method="post" novalidate autocomplete="off">
+        {% csrf_token %}
+        <div>
+            <label for="{{ form_obj.filename.id_for_label }}">{{ form_obj.filename.label }}</label>
+            {{ form_obj.filename }} {{ form_obj.filename.errors.0 }}
+        </div>
+        <div>
+            <label for="{{ form_obj.paths.id_for_label }}">{{ form_obj.paths.label }}</label>
+            {{ form_obj.paths }} {{ form_obj.paths.errors.0 }}
+        </div>
+        <div>
+            <input type="submit" class="btn btn-success" value="注册">
+        </div>
+    </form>
+</body>
+</html>
