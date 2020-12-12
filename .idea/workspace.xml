@@ -25,13 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e21b62c-1725-4f1f-95be-238ecb5874ad" name="Default Changelist" comment="finish download">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn/templates/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn/templates/download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zqxt_tmpl/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zqxt_tmpl/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e21b62c-1725-4f1f-95be-238ecb5874ad" name="Default Changelist" comment="update upload session" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607679708731</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update upload session">
+      <created>1607766636681</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607766636681</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update upload session">
+      <created>1607766645966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607766645966</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,7 +176,8 @@
     <MESSAGE value="first test" />
     <MESSAGE value="first test1" />
     <MESSAGE value="finish download" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish download" />
+    <MESSAGE value="update upload session" />
+    <option name="LAST_COMMIT_MESSAGE" value="update upload session" />
   </component>
   <component name="WindowStateProjectService">
     <state x="695" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607668206077">
@@ -211,9 +220,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573631" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607679722701">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607766651368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607679722701" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607766651368" />
   </component>
 </project>
