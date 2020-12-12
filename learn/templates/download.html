@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>download2</title>
+    <title>download</title>
 </head>
 <body>
-    <form action="" method="post" novalidate autocomplete="off">
+    <form action="/download/" method="post"  novalidate autocomplete="off">
         {% csrf_token %}
         <div>
-            <label for="{{ form_obj.filename.id_for_label }}">{{ form_obj.filename.label }}</label>
-            {{ form_obj.filename }} {{ form_obj.filename.errors.0 }}
+            <label for="{{ login_form.filename.id_for_label }}">{{ login_form.filename.label }}</label>
+            {{ login_form.filename }} {{ login_form.filename.errors.0 }}
         </div>
         <div>
-            <label for="{{ form_obj.paths.id_for_label }}">{{ form_obj.paths.label }}</label>
-            {{ form_obj.paths }} {{ form_obj.paths.errors.0 }}
+            <label for="{{ login_form.paths.id_for_label }}">{{ login_form.paths.label }}</label>
+            {{ login_form.paths }} {{ login_form.paths.errors.0 }}
         </div>
         <div>
-            <input type="submit" class="btn btn-success" value="注册">
+            <input type="submit" class="btn btn-success" value="download">
         </div>
+
     </form>
+<br/>
+
+文件列表：<br><br>
+{% for i in list_sys_path%}
+{{i}}<br>
+{%endfor%}
+
 </body>
 </html>

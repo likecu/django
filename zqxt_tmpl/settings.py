@@ -115,6 +115,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_URL = '/learn/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'learn/media').replace('\\', '/')#media即为图片上传的根路径
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
