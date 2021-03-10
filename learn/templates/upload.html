@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>upload</title>
 </head>
 <body>
-<form action="/learn/upload" method="post" enctype="multipart/form-data">
+<form action="upload" method="post" enctype="multipart/form-data">
   {% csrf_token %}
-    名字：<input type="text" name="name"><br>
   <input type="file" name="pic_file"><br>
   <input type="submit" value="提交">
 </form>
+<br>
+<br>
+{% load static %}
+{% for imgs,imgs_msg in img_all.items %}
+{% for img_key,img_value in imgs_msg.items %}
+for img_key,img_value in imgs_msg.items
+<br>
+
+<img src='{% static img_value %}' alt="{% static img_value %}"/>
+<br>
+<br>
+{% endfor %}
+{% endfor %}
+
 </body>
 </html>

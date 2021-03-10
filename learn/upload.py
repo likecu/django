@@ -1,37 +1,39 @@
 from django.shortcuts import render
-
-from django.http import HttpResponse
-from django.conf import settings
 from datetime import datetime
 import os
-from django.shortcuts import redirect, reverse
-import hashlib
+from django.shortcuts import redirect
+from .download import login_form, list_sys_path
+from django import template
 
+register = template.Library()
 
 def upload(request):
     if request.method == 'GET':
         return render(request, 'upload.html')
     else:
-        pic = request.FILES.get('pic_name')
+        pic = request.FILES.get('pic_file')
+        paths = 'upload/{}_{}_{}_'.format(datetime.now().year, '{:02d}'.format(datetime.now().month),
+                                          '{:02d}'.format(datetime.now().day))
+        path = "learn/static/media/" + paths
+        if "png" or "jpg" or "gif" in pic.name:
+            if os.path.isfile(path + pic.name):
+                os.remove(path + pic.name)
+            #     return render(request, 'upload.html')
+            with open(path + pic.name, 'wb') as f:
+                for c in pic.chunks():  # 相当于切片
+                    f.write(c)
 
-        media_root = settings.MEDIA_ROOT  # media
-        allow_upload = settings.ALLOW_UPLOAD  # ALLOW_UPLOAD
-        path = 'upload/{}/{}/{}/'.format(datetime.now().year, '{:02d}'.format(datetime.now().month),
-                                         '{:02d}'.format(datetime.now().day))
-        full_path = media_root + '/' + path
-
-        # full_path = 'media/upload/2019/12/20'
-        if not os.path.exists(full_path):  # 判断路径是否存在
-            os.makedirs(full_path)  # 创建此路径
-
-        # 要不要改图片的名字 生成hash
-        # 这块要不要判断图片类型 .jpg .png .jpeg
-        # '/../../../myviews/setting.py'
-        if pic.name.split('.')[-1] not in allow_upload:
-            return HttpResponse('fail')
-
-        with open(full_path + '/' + pic.name, 'wb') as f:
+        path = "learn/" + paths
+        if os.path.isfile(path + pic.name):
+            os.remove(path + pic.name)
+        #     return render(request, 'upload.html')
+        with open(path + pic.name, 'wb') as f:
             for c in pic.chunks():  # 相当于切片
                 f.write(c)
 
-        return redirect("bull")
+        if "png" in pic.name:
+            return render(request, 'upload.html',
+                          {"img_all": {"imgs": {"url": str('media/' + paths + pic.name)}}})
+
+    return render(request, 'download.html',
+                  {'login_form': login_form(), 'list_sys_path': list_sys_path("./learn/upload")})

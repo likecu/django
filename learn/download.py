@@ -11,7 +11,7 @@ class login_form(forms.Form):
     paths = forms.CharField(label="目录", min_length=0, required=False)
 
 
-def list_sys_path(current_dir="./learn/media/", deep=0):
+def list_sys_path(current_dir="./learn/upload/", deep=0):
     file_lists = []
     dir_list = os.listdir(current_dir)
     # traverse folder first.
@@ -41,27 +41,26 @@ def list_sys_path(current_dir="./learn/media/", deep=0):
 def download_file(request):
     # do something
     if request.method == 'POST':  # 当提交表单时
-        logging.debug("aaa")
         form = login_form(request.POST)  # form 包含提交的数据
         if form.is_valid():  # 如果提交的数据合法
             the_file_name = form.cleaned_data.get('filename')  # 显示在弹出对话框中的默认的下载文件名
             file_path = form.cleaned_data.get('paths')  # 要下载的文件路径
             t = 0  # 判断是否匹配到文件
-            this_path = "./learn/media/"
+            this_path = ""
 
-            for root, dirs, files in os.walk(this_path):
+            for root, dirs, files in os.walk("./learn/upload/"):
                 for file in files:
                     if file == the_file_name and file_path in root:
                         the_file_name = this_path + root + "/" + file
                         t = 1
             if t == 0:
-                for root, dirs, files in os.walk("."):
+                for root, dirs, files in os.walk("./learn/upload/"):
                     for file in files:
                         if file == the_file_name:
                             the_file_name = this_path + root + "/" + file
                             t = 1
             if t == 0:
-                for root, dirs, files in os.walk("."):
+                for root, dirs, files in os.walk("./learn/upload/"):
                     for file in files:
                         if str(the_file_name) in str(file):
                             the_file_name = this_path + root + "/" + file

@@ -25,7 +25,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e21b62c-1725-4f1f-95be-238ecb5874ad" name="Default Changelist" comment="update upload session" />
+    <list default="true" id="1e21b62c-1725-4f1f-95be-238ecb5874ad" name="Default Changelist" comment="update upload session">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zqxt_tmpl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zqxt_tmpl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/media/else/Visited Links" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn/upload.py" beforeDir="false" afterPath="$PROJECT_DIR$/learn/upload.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dj_learn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dj_learn/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dj_learn/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zqxt_tmpl/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/dj_learn/wsgi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,13 +73,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\25406\Desktop\zqxt_tmpl\learn" />
+      <recent name="C:\Users\25406\Desktop\zqxt_tmpl\learn\static" />
       <recent name="C:\Users\25406\Desktop\zqxt_tmpl\learn\media\else" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.mysql_test">
     <configuration name="download" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zqxt_tmpl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,8 +104,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mysql_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="zqxt_tmpl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mysql_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mysql_test" />
         <item itemvalue="Python.download" />
       </list>
     </recent_temporary>
@@ -145,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607766645966</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update upload session">
+      <created>1607784917035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607784917035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,29 +225,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="update upload session" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="695" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607668206077">
+    <state x="556" y="254" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612339929787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="556" y="254" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1612339929787" />
+    <state x="695" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608031021109" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608026832658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="695" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607668206077" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607679258926">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608026832658" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1612863405646">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607679258926" />
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1607680573630">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612863405646" />
     <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573630" />
-    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1607680573629">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1612863405646">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612863405646" />
     <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573629" />
-    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1607680573629">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1612863405646">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612863405646" />
     <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573629" />
-    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1607680573629">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1612863405646">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612863405646" />
     <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573629" />
     <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1607680573631">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -220,9 +270,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607680573631" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1612341022911">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612341022911" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607766651368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607766651368" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mysql_test.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -29,3 +29,4 @@ class AddForm(forms.Form):
     # 表格
     a = forms.IntegerField()
     b = forms.IntegerField()
+
